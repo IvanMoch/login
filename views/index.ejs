@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>LOGIN</title>
+  </head>
+  <body type="body">
+    <div id="LogInContainer" class="formContainer">
+      <h2 class="formTitle">Log in</h2>
+      <form method="post" name="signInForm">
+        <label for="username" class="text"><strong>Username: </strong></label
+        ><br />
+        <input
+          type="text"
+          id="username"
+          class="textFields"
+          name="username"
+          required
+          minlength="6"
+          maxlength="12"
+          placeholder="username" />
+        <br />
+
+        <label class="text"><strong>password: </strong></label><br />
+        <input
+          type="password"
+          id="password"
+          class="textFields"
+          required
+          placeholder="password" />
+        <br />
+
+        <input type="submit" value="sign in" class="submitButton" />
+      </form>
+    </div>
+
+    <div id="signUpContainer" class="formContainer">
+      <h2 class="formTitle">sign Up</h2>
+      <form name="signUpForm" method="post">
+        <label for="Newusername" class="text"><strong>Username: </strong></label
+        ><br />
+        <input
+          type="text"
+          id="Newusername"
+          class="textFields"
+          name="username"
+          required
+          minlength="6"
+          maxlength="12"
+          placeholder="username" />
+        <br />
+        <label class="text"><strong>password: </strong></label><br />
+        <input
+          type="password"
+          id="NewPassword"
+          class="textFields"
+          required
+          placeholder="password" />
+        <br />
+        <label class="text"><strong> confirm password: </strong></label><br />
+        <input
+          type="password"
+          id="ConfPassword"
+          class="textFields"
+          required
+          placeholder="confirm password" />
+        <br />
+        <input type="submit" value="sign up" class="submitButton" />
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
